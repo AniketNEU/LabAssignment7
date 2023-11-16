@@ -144,7 +144,7 @@ public class CreatePanel extends javax.swing.JPanel {
         // TODO add your handling code here:
         String name = NameTextfield.getText();
          if(!isValidName(name)){
-            JOptionPane.showMessageDialog(this, "Please enter a valid last name", "Invalid Input", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Please enter a valid name", "Invalid Input", JOptionPane.ERROR_MESSAGE);
             NameTextfield.requestFocus();
         }
     }//GEN-LAST:event_NameTextfieldFocusLost
