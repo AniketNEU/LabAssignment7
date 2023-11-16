@@ -94,11 +94,14 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void createButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createButtonActionPerformed
         // TODO add your handling code here:
+        System.out.println("Create button clicked");
         CreatePanel newCreatePanel = new CreatePanel(bottomPanel);        
         bottomPanel.add(newCreatePanel, "CreatePanel");       
         CardLayout layout = (CardLayout) bottomPanel.getLayout();     
         layout.show(bottomPanel, "CreatePanel");
-         viewButton.setEnabled(true);
+        bottomPanel.revalidate();
+        bottomPanel.repaint();
+         //viewButton.setEnabled(true);
     }//GEN-LAST:event_createButtonActionPerformed
 
     private void viewButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewButtonActionPerformed
